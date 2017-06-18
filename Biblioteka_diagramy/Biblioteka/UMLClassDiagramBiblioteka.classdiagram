@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="758b34dc-1ba1-41a8-8f92-9e2726376115" name="UMLClassDiagramBiblioteka" linkedPackageId="03c08bd4-fa5e-4fb2-9453-6018c21e6bca" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="46f28b7c-0261-495f-b1f2-697125527a14">
+      <elementDefinition Id="dfc9509e-3a03-4a5f-a557-a4447df54fed" />
+      <body>zmiana statusu jest zatwierdzeniem oddania/wypozyczenia</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="12192a3c-e0cc-4639-8c34-7f0123ca3ead" name="Osoba" visibility="Protected" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b8f38f8-58ed-4184-9139-2891ef844e3a" />
+        <targetEnds>
+          <association Id="993a768f-3088-4536-843b-427b20c95346" isDerived="false" sourceEndRoleName="Osoba" targetEndRoleName="Katalog" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a1813af4-7003-4152-8318-f1bb0e742939" LastKnownName="Katalog" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf23100a-90f6-48aa-81fe-27b7f18f8beb" name="Osoba" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e4b5121-9f92-4ee3-8277-726d61c37789" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e79fe87d-652a-40f6-a2b2-603393303c07" name="Katalog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2927db8d-e2b6-4e5a-a905-fa83bc5e0764" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cfe86138-16fe-4e13-9d74-bddf37a8e498" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3336f452-ce37-47a4-bc43-56212b5931e2" name="login" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66b0c736-f013-477b-97b1-8050465cd24f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f496a14-9083-4bc2-9709-f8fd02115e1b" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="52a09234-d18e-4d88-87c8-b9cc49817e61" name="haslo" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0fa7f363-d31e-4e4f-bd0d-7f977a426bb9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c628a80f-c0de-47e3-964a-7d37cefe0a8a" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="fd62dd1f-2cb2-4c12-b26c-f6ced8aadd7f" name="typKonta" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f5d1b05-dd96-4181-8998-c61640fc9a7a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3834172-fadb-4cec-b4e5-079fa90a4fb6" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="22119be1-1f82-46f9-bb0d-98ee0b741047" name="logowanie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f4edbf4-3d18-4a49-b725-50e39981b891" />
+          </operation>
+          <operation Id="04fb094b-b913-4687-af5e-ea434ad0635a" name="kimJestes" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d8077bfd-8cbb-43ea-be6e-a8745c285f42" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42ac8483-e358-4c52-9d73-a44e21e8a311" name="Uzytkownik" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d2e7de6-9c1d-4c11-a8c6-acf8176e4967" />
+        <generalsInternal>
+          <generalization Id="b6258c99-9984-4e85-8060-bf403bb9f842" isSubstitutable="false">
+            <classMoniker Id="12192a3c-e0cc-4639-8c34-7f0123ca3ead" LastKnownName="Osoba" />
+            <elementDefinition Id="ec9d9951-cc9a-4fe6-86a1-bcdd543f4981" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="5e09cfd2-cbf2-4d09-afa3-73a53226a359" name="oddaj" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2be5ba3e-c7af-4152-9c12-ba0d7d3eeaea" />
+          </operation>
+          <operation Id="758b5a0e-eb24-4809-8927-c5c0a7164ce5" name="wypozycz" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="35ec9ac9-3973-499a-a00d-75175b879b44" />
+          </operation>
+          <operation Id="29b073b8-96d3-4752-8a8b-cac2fe464159" name="kimJestes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="47fb85f7-ac3f-4e89-9724-47f1b943e259" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a3a9dc7-3463-4612-bdf8-08be4c952ef3" name="Bibliotekarz" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77111ecc-cf9d-49d7-a653-d9fe756517f1" />
+        <generalsInternal>
+          <generalization Id="ed78c528-95fa-4bda-b13c-b05e4c4f5c81" isSubstitutable="false">
+            <classMoniker Id="12192a3c-e0cc-4639-8c34-7f0123ca3ead" LastKnownName="Osoba" />
+            <elementDefinition Id="c5b03283-2589-46ef-b8a6-39d21ea910d5" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="d44a2a47-ea78-4a82-8767-164eb2d169b8" name="usunKonto" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3049da1c-7d0d-4075-9d89-a43dbd8b87f9" />
+          </operation>
+          <operation Id="c77f71b8-1c11-419b-a654-6b8b13b770ad" name="kimJestes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6236584-7431-4501-bb4e-69d1e4a31854" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8765db1b-974d-4ae3-b880-8d7989444d2f" name="AbstrakcyjnaFabrykaOsob" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="70416b34-a324-4560-b232-b7c7693630ba" />
+        <ownedOperationsInternal>
+          <operation Id="3cc6c49e-f319-42c5-bdaf-d9a8a4e50326" name="stworzOsobe" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="967629a2-3a5e-44b8-bb34-782b60a8ae9c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="87308626-b405-49ac-8b05-283c2cd2b66e" direction="Return" isUnique="false">
+                  <elementDefinition Id="f7d30050-9fba-4900-aa0a-5521f380a21c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f620bc91-94e8-4cb1-beb8-910fd604bd4e" LastKnownName="Osoba" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7ac4be63-99db-4675-841c-23b6ad7a0694" name="podajLogin" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fec6f307-811a-4e0b-9542-70d29fa7b847" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="481856aa-5475-4d3d-906c-aa0c3bfee100" direction="Return">
+                  <elementDefinition Id="22ccb561-602e-42e9-a425-3460443b3165" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97339cb4-c28b-4e6a-b0fa-d2450b00c82c" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b294fa61-14a6-4f82-acaa-88a504e36f45" name="podajHaslo" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="daccf79e-d0f3-401c-8ffb-095c5990d98a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="85745657-e36a-43f5-a1fe-a1b124b78e37" direction="Return" isUnique="false">
+                  <elementDefinition Id="06dc9b8b-e231-4578-8f64-0562e841a630" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c628a80f-c0de-47e3-964a-7d37cefe0a8a" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9d26ebdd-bc73-4be9-98d4-d86aa8f54f1e" name="podajRodzajKonta" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b0e9612-8b2c-4c8e-944e-98f1b108040a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b8c21ae2-5f11-41ef-9c15-b6ba382d68ef" direction="Return" isUnique="false">
+                  <elementDefinition Id="af0a762e-b52f-4210-8d4f-9f4d3ae879db" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d5bb7d14-ca22-4305-bc37-6257b018b1ae" name="FabrykaUzytkownikow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3faa849b-c0f2-4293-a5dd-5a59e9f43000" />
+        <suppliersInternal>
+          <dependency Id="73030785-57e5-4272-83e4-8264484dafb8">
+            <classMoniker Id="42ac8483-e358-4c52-9d73-a44e21e8a311" LastKnownName="Uzytkownik" />
+            <elementDefinition Id="12b8a704-e094-4ab5-a93e-542bcb759ae0" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="589f74ab-16e8-4fae-aaab-7d8c0c7e2f6d" isSubstitutable="false">
+            <classMoniker Id="8765db1b-974d-4ae3-b880-8d7989444d2f" LastKnownName="AbstrakcyjnaFabrykaOsob" />
+            <elementDefinition Id="582b21bc-2498-438b-9054-7cea302d57ee" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="d5e5c57a-2281-4578-8f86-017df616d77b" name="stworzOsobe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5a43168-3ea5-44d7-9379-dab78c3ad712" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da114af0-9625-48d2-9196-d8a5fd26c513" direction="Return" isUnique="false">
+                  <elementDefinition Id="32bea869-fdee-4151-841e-6d437e8dd620" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8cd8c7f6-f895-4fdf-a69b-bf0235e7ad44" LastKnownName="Osoba" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="918868f3-45ec-4841-8117-20998a72bd64" name="FabrykaBibliotekarzy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="679162f8-48d0-47f5-a573-c71c13562d24" />
+        <suppliersInternal>
+          <dependency Id="59f7cafc-7083-43c4-9f6f-1902c6208ed4">
+            <classMoniker Id="0a3a9dc7-3463-4612-bdf8-08be4c952ef3" LastKnownName="Bibliotekarz" />
+            <elementDefinition Id="c66d9267-e8b8-4dc7-87fd-c29433123fa6" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="9f97d9f4-64af-478b-a7ce-5aa40fe09a5b" isSubstitutable="false">
+            <classMoniker Id="8765db1b-974d-4ae3-b880-8d7989444d2f" LastKnownName="AbstrakcyjnaFabrykaOsob" />
+            <elementDefinition Id="93157f1c-3099-4a84-b58d-304d1cd01406" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="719f9183-2c38-46d4-b99f-9e2ab9a9746e" name="stworzOsobe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="186a3a47-399a-4862-b25f-10adc03d1221" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6a851550-e73d-44c5-b384-b89500dda4af" direction="Return" isUnique="false">
+                  <elementDefinition Id="c1fe4959-8ada-4abb-a2c9-24f71f4b664a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de90ae53-2cca-4e92-a617-d7ea85e27224" LastKnownName="Osoba" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5c3747e-e6bb-4daf-8b24-e41885242241" name="Pozycja" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6c3dcc09-32df-410b-84d2-c1163c154be1" />
+        <ownedAttributesInternal>
+          <property Id="ac379b5f-3f78-4b9d-a82f-f2735f65a78b" name="nazwa" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9f8d025-1709-4cbd-8793-9e941f6a24ad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f496a14-9083-4bc2-9709-f8fd02115e1b" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="4803fb6e-1a06-42f3-aff7-60e9238ac47d" name="autor" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13b2b346-d5f2-4e69-a781-a37d19109f0b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f496a14-9083-4bc2-9709-f8fd02115e1b" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="1f0c9fdf-7afa-4125-afe8-03db3e72a2ff" name="rokWydania" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="807512e6-4626-428d-9bea-aa4647efcf54" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c628a80f-c0de-47e3-964a-7d37cefe0a8a" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="77522a58-ead5-4578-8a15-da1c82e6a9eb" name="status" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b3794f2-08e6-4f0d-bd8b-d9eb0574093d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3834172-fadb-4cec-b4e5-079fa90a4fb6" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="141483ec-8131-4450-bcef-c63d5dcade63" name="zmienStatus" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3d20b864-740f-4847-8d2f-a1ad00aab72c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9526837-4659-4729-9cab-f770609c2f5a" name="Ksiazka" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f3e978ed-61d5-41c9-a308-c6cd1ddcf72c" />
+        <generalsInternal>
+          <generalization Id="ea9b9392-9cef-41fe-85a7-967caf6f8948" isSubstitutable="false">
+            <classMoniker Id="f5c3747e-e6bb-4daf-8b24-e41885242241" LastKnownName="Pozycja" />
+            <elementDefinition Id="514ed82d-7016-422d-aec2-f970f5f42a28" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="9132caa3-65ba-4984-b6fd-1671eeb304d6" name="liczbaStron" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b2b9deae-5787-4ec2-92de-a4d76d56b942" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8d1d60ef-afa7-48d6-a06b-c0f45a2b32dc" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="976b9e5b-8925-4802-b329-94a53e8dd90f" name="AbstrakcyjnaFabrykaPozycji" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23dceb1e-b7b1-4fed-93ee-0351bcd85d24" />
+        <ownedOperationsInternal>
+          <operation Id="7bdbe21a-88d6-4d95-8361-b7ce4224fb0b" name="stworzPozycje" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d30058f-2b25-4653-b0e4-ba21e1fdf3e0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8eb61689-2f76-4ee9-8319-3459bca4155e" direction="Return" isUnique="false">
+                  <elementDefinition Id="6ad1bdfe-616a-42ce-adf5-064bd220be4e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b03d74b2-5a9b-4076-805e-f08127766e0f" LastKnownName="Pozycja" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9419ab37-393e-4261-b951-72bc37f6f316" name="podajAutora" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d117abd-19ed-4a4b-9abf-db4446205ae7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2b54d40-3c20-4a68-85d1-baacdcfc4cd8" direction="Return" isUnique="false">
+                  <elementDefinition Id="7858c08e-fbba-4e1b-9346-d64da9643f98" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7f496a14-9083-4bc2-9709-f8fd02115e1b" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="68f4f845-faf4-4fef-a5ef-4c94f72c17ee" name="podajNazwe" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="61ca5483-f99a-485c-980b-b921ddfa17bd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c8fa276-42ca-44b2-b961-b973dc170016" direction="Return">
+                  <elementDefinition Id="b2fe1133-76e2-47d2-a24b-97d11b2bcd6a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9be8e491-3358-4667-b348-02dda7f38026" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4d5147e9-e9b7-493d-9f39-8be84bcace2c" name="podajRokWydania" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="870f568a-9fa7-42e5-962a-d3ad028c5fc7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a29a497b-1e76-423a-96fc-d4ed29ee992d" direction="Return">
+                  <elementDefinition Id="6092c270-7ac2-42df-9478-7727888289b4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="79534bcd-5148-49cb-9252-7269c7cf20e4" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c26d0ab8-10c0-467f-808c-5b27904e214f" name="FabrykaKsiazek" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1d398d4-87db-438e-9716-b38e1c96400c" />
+        <suppliersInternal>
+          <dependency Id="d393b2f0-3472-46fc-99a6-3f0e436afd52">
+            <classMoniker Id="d9526837-4659-4729-9cab-f770609c2f5a" LastKnownName="Ksiazka" />
+            <elementDefinition Id="a4958027-c132-40e8-a64c-9eee8ea5dfab" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="43c2f9b8-72d6-44c6-8466-7f6a13841ffd" isSubstitutable="false">
+            <classMoniker Id="976b9e5b-8925-4802-b329-94a53e8dd90f" LastKnownName="AbstrakcyjnaFabrykaPozycji" />
+            <elementDefinition Id="34c671ca-8b84-429f-b4d2-8a652213f50b" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="2b737e3b-e3fd-4d8f-8bc7-5efe268c2460" name="stworzPozycje" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d6010ab3-b45b-4b6f-b0c8-ce55e503f7b7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="476b9588-3a65-404e-a610-aeae6bd90f7d" direction="Return" isUnique="false">
+                  <elementDefinition Id="4b1de1fc-e0db-4b56-a35e-86a99ace2c43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fa47876a-a073-4676-9d36-c3da83441180" LastKnownName="Pozycja" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="504bbba9-f73b-479c-8b5d-9d0d008fdb34" name="podajLiczbeStron" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4dbd5e9-fef0-4ca3-b5dd-4011c2e830b4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5395db20-7e74-4a06-a2e3-9a89ba4a3efb" direction="Return" isUnique="false">
+                  <elementDefinition Id="e0e8f4d3-b154-4c79-9e69-fcaee2362c14" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c628a80f-c0de-47e3-964a-7d37cefe0a8a" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1813af4-7003-4152-8318-f1bb0e742939" name="Katalog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="293d868f-37f6-4b32-aa3f-242c6c87893c" />
+        <targetEnds>
+          <association Id="4e0f2b12-083a-4f41-9a50-fbef47d004e8" isDerived="false" sourceEndRoleName="Katalog" targetEndRoleName="Pozycja" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f5c3747e-e6bb-4daf-8b24-e41885242241" LastKnownName="Pozycja" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbe0af59-e124-4042-b03b-3d1ed6296623" name="Katalog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c5714a2-204c-4b22-b24c-ecf2c46c31a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d974b999-07a9-448d-b1f0-cbedda319980" name="Pozycja" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5d466862-f4b8-4b11-9214-e384d22d1258" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c89989e4-d99b-447f-bf5e-a5448df09072" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="c7dd7aa3-c107-4d58-8ac8-fc34b878695d" name="dodaj" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6cdd288b-4b8c-42f3-94c6-b17f20a63dd8" />
+          </operation>
+          <operation Id="1c017a2c-701e-4e00-856d-3aa8e3389383" name="usun" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c615924-11f1-45c9-b5df-5caa7082539f" />
+          </operation>
+          <operation Id="198ffcc5-39a2-4388-846c-14dc8486ca6d" name="wyswietl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8771bdc-d813-499d-938a-500bfdaa8124" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f620bc91-94e8-4cb1-beb8-910fd604bd4e" name="Osoba" isAbstract="false" isLeaf="false" cachedFullName="Biblioteka::Osoba">
+        <elementDefinition Id="9b8f38f8-58ed-4184-9139-2891ef844e3a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="de90ae53-2cca-4e92-a617-d7ea85e27224" name="Osoba" isAbstract="false" isLeaf="false" cachedFullName="Biblioteka::Osoba">
+        <elementDefinition Id="9b8f38f8-58ed-4184-9139-2891ef844e3a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8cd8c7f6-f895-4fdf-a69b-bf0235e7ad44" name="Osoba" isAbstract="false" isLeaf="false" cachedFullName="Biblioteka::Osoba">
+        <elementDefinition Id="9b8f38f8-58ed-4184-9139-2891ef844e3a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b03d74b2-5a9b-4076-805e-f08127766e0f" name="Pozycja" isAbstract="false" isLeaf="false" cachedFullName="Biblioteka::Pozycja">
+        <elementDefinition Id="6c3dcc09-32df-410b-84d2-c1163c154be1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fa47876a-a073-4676-9d36-c3da83441180" name="Pozycja" isAbstract="false" isLeaf="false" cachedFullName="Biblioteka::Pozycja">
+        <elementDefinition Id="6c3dcc09-32df-410b-84d2-c1163c154be1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f496a14-9083-4bc2-9709-f8fd02115e1b" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="9187ec96-1f19-43d8-8cb6-c36789023874" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c628a80f-c0de-47e3-964a-7d37cefe0a8a" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="67d8ac7b-7b47-4591-bc73-ffb06662ade3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8d1d60ef-afa7-48d6-a06b-c0f45a2b32dc" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="67d8ac7b-7b47-4591-bc73-ffb06662ade3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f3834172-fadb-4cec-b4e5-079fa90a4fb6" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="9d095bd2-b645-423f-97c0-dc6c7d37b8c5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="97339cb4-c28b-4e6a-b0fa-d2450b00c82c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9be8e491-3358-4667-b348-02dda7f38026" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="79534bcd-5148-49cb-9252-7269c7cf20e4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="03c08bd4-fa5e-4fb2-9453-6018c21e6bca" name="Biblioteka">
+    <elementDefinition Id="c3f5e8d1-dc41-469e-affe-719b482f0a4c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f7ac232d-60c7-4bbf-be05-a7536096537e">
+        <profileInstance Id="7f23d9e9-6a43-407b-8145-6485e1ff8119" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f728082b-fb66-4bb0-b1a6-5e45e42257d7">
+        <profileInstance Id="2a298037-5fb9-4877-a94c-f2971b320605" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

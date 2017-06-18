@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7f19654b-0f37-4d2a-9dfe-44e306b6d28c" name="UMLUseCaseDiagramBiblioteka" linkedPackageId="b85eb2ce-b9c0-4a4a-af54-86fb9738bf46" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="18371058-4efb-4a59-975a-3dce572e98cb" name="uzytkownik" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a067505-14eb-4796-9daf-650f54f40324" />
+        <generalsInternal>
+          <generalization Id="592d79ed-a170-4ae7-afa1-222d79a7aa1b" isSubstitutable="false">
+            <actorMoniker Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" LastKnownName="Osoba" />
+            <elementDefinition Id="7257b667-32e1-4eac-a2c8-a1910ba1fbc2" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="ea3549b0-89ce-4697-bd77-3ab8422ca02d" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="logowanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3ba3675f-cf2f-4ad1-9431-d72f84c1be83" LastKnownName="logowanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb847332-f7ed-4fd4-ab1e-e311613b42c8" name="uzytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2a6d7053-9497-4577-96fa-1402f894834d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef79c0d6-a853-4070-8dec-cf91bc73e347" name="logowanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a15f27b-a0d2-4afb-8057-691aea1dad45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4d4d5e5f-7de2-4dbc-9fef-1bcade6302a7" />
+          </association>
+          <association Id="bdccee45-7074-4d43-8710-71a0b96e59f6" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="nowe konto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aa65cd89-b7c2-4a36-82e7-a7555e03cd82" LastKnownName="nowe konto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcf87b66-1459-4518-90ab-317bfda29432" name="uzytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df38f954-3397-4b3c-8769-3b9ec760c7b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40bda52f-4691-4407-a95f-239c3f766d93" name="nowe konto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="de5e6e25-648e-4f3c-8459-38647f035f18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c2c4713-ebae-41ff-a1bc-e3bc284d6955" />
+          </association>
+          <association Id="062c9559-f66f-49b2-9bea-648de705ea86" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="wyszukiwanie/przegladanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4cca2636-9148-4a65-b4fb-9d7cffcdde69" LastKnownName="wyszukiwanie/przegladanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0d130e7-eab6-4f3e-a782-478892b0d3a1" name="uzytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="46d8caae-a336-4e07-81d3-b4bbaa341080" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f9ba67c-2e26-4417-8acb-2e1790a9f879" name="wyszukiwanie/przegladanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f68f141f-b843-4019-b7c4-6718c859518c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d951ce70-8027-4e66-884a-0815a30a1c2a" />
+          </association>
+          <association Id="93946700-606b-46aa-b875-2a536a4dae64" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="rezerwacja" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0a627d10-7ceb-4d76-94a9-42dfd8850b10" LastKnownName="rezerwacja" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38cb2a5f-16a5-41b9-9206-ee1da23b7f5f" name="uzytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33939505-def8-4dd8-84fa-e52c30a27085" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfa92c2d-f499-421d-af9b-bffc10a226be" name="rezerwacja" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="310f014a-3547-42b6-b4bc-c4e6c8733209" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="224d508d-3f54-411f-bb66-d2b30d7943f5" />
+          </association>
+          <association Id="8ba4a16f-a0bc-4725-b8cc-b52d51f338d0" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="zwrot" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d980491e-0b7f-4472-b727-90ae74ae11f2" LastKnownName="zwrot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf3896d7-cdb8-4dfd-b5f9-0a6bd43e99f6" name="uzytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad806df6-ea63-4b5d-a22f-bb3cca8c05d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e08ab043-e148-4e68-8b21-162ef21d86c1" name="zwrot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="298d932f-3bfb-4db0-983d-548485749f12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a8d61960-6f9d-4012-a0e3-84bc4a42a06c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="26603e1f-69a3-4766-898f-2dc123e9df2e" name="bibliotekarz" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ea5cfff-b94e-4e84-a2cb-34f53e1c9a7d" />
+        <generalsInternal>
+          <generalization Id="da315914-12f8-444b-9edd-0c031cbe83b6" isSubstitutable="false">
+            <actorMoniker Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" LastKnownName="Osoba" />
+            <elementDefinition Id="b44d4646-77fa-4daf-9b39-6aea59f09568" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="797c910b-a33a-440f-a86c-e76457ba0dc4" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="logowanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3ba3675f-cf2f-4ad1-9431-d72f84c1be83" LastKnownName="logowanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f94ff1f3-d5ff-4516-b07e-cfb535ad4b6f" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ffe8ce34-8dfe-4290-8fb9-80cfca1dafa0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="094f7839-5e5d-4c3c-9f70-4137cb5c0d82" name="logowanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3075b614-c636-4fb1-a5bb-c3e7f861d95f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab9c3cfe-17a3-4267-a310-0f55b7901c29" />
+          </association>
+          <association Id="997e583b-8ad3-48e2-8ec0-92ad6c254982" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="usun konto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="478d95f7-bc81-44a2-a1d5-2782838c702b" LastKnownName="usun konto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bf0ed74-bb33-45f0-8229-19c2ace92d04" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1e820cd-85f0-474b-a503-fcab24380c0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55e4aac8-13bb-4498-92b6-e3a2903fe331" name="usun konto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e46a2f6e-f130-495c-87c7-214e45df4bd2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a48c6b9a-ea78-40d5-bcca-0ce345d0f221" />
+          </association>
+          <association Id="3ff2551e-aa6a-468d-abf0-69125153d635" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="wyszukiwanie/przegladanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4cca2636-9148-4a65-b4fb-9d7cffcdde69" LastKnownName="wyszukiwanie/przegladanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35638303-f234-43ad-8118-18895b983318" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0074ba01-3491-4854-b88a-edb12020f9ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1eecbb0d-6ea1-4376-b9ac-f03b59e42e09" name="wyszukiwanie/przegladanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6de0bc1a-fb39-494f-95bb-a6672ac9b6d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="491b587e-f1cf-4122-9ecd-5a08a0415ada" />
+          </association>
+          <association Id="d1227193-4f29-4901-98b6-2836b2419632" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="zatwierdzenie rezerwacji/wypożyczenie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcd6a808-e706-4ea9-85df-2a70255ecc60" LastKnownName="zatwierdzenie rezerwacji/wypożyczenie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="325b03a9-4711-4f58-bc96-ce1b608755f2" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4e7165b1-1ab2-4569-97a8-4c82cb74517c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dda1ff6e-1b04-43d9-abba-cd35ba10cb9c" name="zatwierdzenie rezerwacji/wypożyczenie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8fa79e69-d624-4027-a8d7-e749506c1d41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4283f368-2850-4ebc-a573-036bb832b5fb" />
+          </association>
+          <association Id="724fdb9f-d799-4da8-9d96-5a6c3fe914b9" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="zatwierdzenie zwrotu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a75fa9e3-705b-4dab-80fc-842b5918983a" LastKnownName="zatwierdzenie zwrotu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9607de58-2747-4b4d-b2c6-b79d42305eb0" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff9215c0-df1f-4ada-8633-6169c8cf6ab6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1dbc8f60-5d40-454f-b22c-157161ce41d0" name="zatwierdzenie zwrotu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d86c12e8-0d47-4d60-829d-467467f6c62d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04cf9c76-ce11-429f-b0c4-bccc1c24997e" />
+          </association>
+          <association Id="94e7f409-ced8-4db6-ba81-a5c6a22a9685" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="dodaj/usun pozycje" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0544aed1-e750-41fa-bf9b-3df3ff411ab5" LastKnownName="dodaj/usun pozycje" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="506df3e3-a6f5-4f68-ae2d-533b1a05525c" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ddf10fbb-55cd-44d6-8d39-f54c332f5b69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5583f0d3-9a41-4157-b51b-b8aa8e7b8cb2" name="dodaj/usun pozycje" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a3226e0-d05a-4849-ae6c-bc319a94b2e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be70e0b1-f4aa-4221-9974-aae8277dc554" />
+          </association>
+          <association Id="16c3b971-9ff5-4c08-8869-9bbb4db9e887" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="nowe konto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aa65cd89-b7c2-4a36-82e7-a7555e03cd82" LastKnownName="nowe konto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e4f85e3-f5d3-4ab2-8582-42f8dc85e8f6" name="bibliotekarz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58f922e0-1505-448b-9f6a-f40ac6e034a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="853c516d-0c30-4ed2-975b-0c1687ce18f1" name="nowe konto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a15a687a-16e4-4a5f-842a-46e733790c4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="adc60b9f-067d-4410-bc6c-4a60097ffa6c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" name="biblioteka" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3208255d-aea3-428c-9d72-7b7a4f2f5eea" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="3ba3675f-cf2f-4ad1-9431-d72f84c1be83" name="logowanie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d435417f-3261-4b66-a357-258b774d7212" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="aa65cd89-b7c2-4a36-82e7-a7555e03cd82" name="nowe konto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e30192c-851f-4a30-964e-86b648a6bca0" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="478d95f7-bc81-44a2-a1d5-2782838c702b" name="usun konto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2cf59e73-f733-4034-b15e-55d59cc9717d" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4cca2636-9148-4a65-b4fb-9d7cffcdde69" name="wyszukiwanie/przegladanie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5b55bd2-c34a-4720-a877-ed7053801f5d" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0a627d10-7ceb-4d76-94a9-42dfd8850b10" name="rezerwacja" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b6092e2-3899-485c-a6b8-d3cc46c27260" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fcd6a808-e706-4ea9-85df-2a70255ecc60" name="zatwierdzenie rezerwacji/wypożyczenie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="897ee908-dffd-4d39-af98-d818e3ccf15e" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d980491e-0b7f-4472-b727-90ae74ae11f2" name="zwrot" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e89700bc-6bf1-42d7-b5d7-b0debb68a86b" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a75fa9e3-705b-4dab-80fc-842b5918983a" name="zatwierdzenie zwrotu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcd563ca-f5e8-4764-89fc-3440222cd995" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0544aed1-e750-41fa-bf9b-3df3ff411ab5" name="dodaj/usun pozycje" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d33034b7-f543-459d-b788-3b17d2fdf0e2" />
+        <subjects>
+          <subsystemMoniker Id="dcb6f92e-ea71-4e6e-908c-d175e6fdba69" LastKnownName="biblioteka" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" name="Osoba" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8b8a931-9d62-48a2-9354-dd3a31a40024" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b85eb2ce-b9c0-4a4a-af54-86fb9738bf46" name="Biblioteka">
+    <elementDefinition Id="c3f5e8d1-dc41-469e-affe-719b482f0a4c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="062d3df3-e6a8-405d-be14-774934a7bbb5">
+        <profileInstance Id="0b962ecd-3782-4248-9629-1f964d57b156" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2003a7fe-0384-42b9-8de0-bb76c529e5ff">
+        <profileInstance Id="26b00729-e238-42b5-9ce2-fd71cb434fda" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
