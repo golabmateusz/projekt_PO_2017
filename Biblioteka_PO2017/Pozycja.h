@@ -1,5 +1,8 @@
 #include <iostream>
 #include "stdafx.h"
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 /*
 class Pozycja
@@ -23,35 +26,17 @@ public:
 
 
 };
-
-class Pozycja
-{
-public:
-    Pozycja();
-    virtual ~Pozycja();
-
-    int masa() { return this->_masa; } //getter
-protected:
-    int _masa;
-};
 */
 class Pozycja {
-   protected:   
-    string autor;
+protected:   
+
+    virtual ~Pozycja();//wirtualny destruktor, bo s¹ wirtualne funkcje
+	virtual void zmienStatus()=0;
+
+public:
+	
+	string autor;
 	string nazwa;
 	int rokWydania;
     bool status;
-   public:
-         virtual void stworzPozycje();// metoda do rysowania obiekt
-         // poni¿sze metody s¹ wirtualne, gdy¿ klasy pochodne nie musz¹ koniecznie w ten sposób przechowywaæ
-         // po³o¿enia obiektu, jednak maj¹ ju¿ cia³a, gdy¿ to bêdzie najczêstszy przypadek
- 
-         // metoda do ustalania po³o¿enia obiektu
-         virtual void stworzPozycje(bool status)
-		 {
-            status = false;         
-         }
-         // metody do pobierania po³o¿enia obiektu
-         virtual float dodajPozycje();
-         virtual ~Pozycja() {}//wirtualny destruktor, bo s¹ wirtualne funkcje
 };

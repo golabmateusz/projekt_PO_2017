@@ -12,10 +12,9 @@ public:
      //virtual ~Ksiazka();
 	 //irtual Pozycja * produkuj() { return new Ksiazka(); }
  /////////////
-	 void rysujSie(){
-            cout<<"malo wymagajacy model jest rysowany na pozycji: "<<x_<<", "<<y_<<endl;
-         }
-	  Ksiazka (string autor, string nazwa, int rokWydania, bool status, int liczbaStron):Pozycja(autor, nazwa, rokWydania, status){}
-	  ~Ksiazka();
+
+	  Ksiazka (string autor, string nazwa, int rokWydania, bool status, int liczbaStron){}
+	 // :Pozycja(autor, nazwa, rokWydania, status)
+	  virtual ~Ksiazka();
 };
 
