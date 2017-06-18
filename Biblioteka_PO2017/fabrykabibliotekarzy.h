@@ -7,5 +7,5 @@
  class FabrykaBibliotekarzy : public AbstrakcyjnaFabrykaOsob
  {
  public:
-	 virtual Osoba * stworzOsobe();
+		virtual Osoba* stworzOsobe();
  };

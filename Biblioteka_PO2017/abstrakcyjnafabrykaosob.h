@@ -5,7 +5,7 @@
  {
  public:
 	 virtual ~AbstrakcyjnaFabrykaOsob();
-	 virtual Osoba * stworzOsobe() = 0;
+	 virtual Osoba* stworzOsobe() = 0;
  protected:
 	 int podajHaslo();
 	 string podajLogin();
