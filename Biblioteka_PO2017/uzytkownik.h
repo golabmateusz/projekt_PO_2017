@@ -2,8 +2,6 @@
 #pragma once
 #include "osoba.h"
 
- using namespace std;
-
  class Uzytkownik : public Osoba
  {
  public:
