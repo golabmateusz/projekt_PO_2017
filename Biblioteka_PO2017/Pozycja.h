@@ -1,7 +1,10 @@
 #include <iostream>
 #include "stdafx.h"
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
-
+/*
 class Pozycja
 {
 	
@@ -23,15 +26,17 @@ public:
 
 
 };
+*/
+class Pozycja {
+protected:   
 
-class Pozycja
-{
+    virtual ~Pozycja();//wirtualny destruktor, bo s¹ wirtualne funkcje
+	virtual void zmienStatus()=0;
+
 public:
-    Pozycja();
-    virtual ~Pozycja();
-
-    int masa() { return this->_masa; } //getter
-protected:
-    int _masa;
+	
+	string autor;
+	string nazwa;
+	int rokWydania;
+    bool status;
 };
-
