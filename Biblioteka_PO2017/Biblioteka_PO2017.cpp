@@ -8,6 +8,11 @@
 #include "osoba.h"
 #include "bibliotekarz.h"
 #include "uzytkownik.h"
+#include "Pozycja.h"
+#include "Ksiazka.h"
+#include "Katalog.h"
+#include "FabrykaKsiazek.h"
+#include "AbstrakcyjnaFabrykaPozycji.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
