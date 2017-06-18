@@ -2,25 +2,10 @@
 #include "AbstrakcyjnaFabrykaPozycji.h"
 using namespace std;
 
-
-void AbstrakcyjnaFabrykaPozycji::podajAutora()
-{
-
-	
-}
-
-void AbstrakcyjnaFabrykaPozycji::podajNazwe()
-{
-
-
-}
-
-void AbstrakcyjnaFabrykaPozycji::podajRokWydania()
-{
-
-
-}
-
+string autor; 
+string nazwa;
+int rokWydania;
+bool status;
 void AbstrakcyjnaFabrykaPozycji::stworzPozycje()
 {
    cout<<endl<<"Podaj autora: ";

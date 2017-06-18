@@ -9,34 +9,17 @@ class AbstrakcyjnaFabrykaPozycji
 	//void podajAutora();
 	//void podajNazwe();
 	//void podajRokWydania();
-
+     void stworzPozycje();
 public:
+	//
+	 public:
+         // metoda do tworzenia instancji obiektów
+         virtual Pozycja * stworzPozycje (string autor, string nazwa, int rokWydania, bool status);
+         virtual ~AbstrakcyjnaFabrykaPozycji(){}                     //wirtualny destruktor, bo s¹ wirtualne funkcje
+
+	//Pozycja();
+	//~Pozycja();
 	//void stworzPozycje();
 
 
-	Pozycja();
-	~Pozycja();
-	void stworzPozycje();
-
-
-};
-class Zwierze
-{
-public:
-    Zwierze();
-    virtual ~Zwierze();
-    virtual void glos() = 0;
-};
-class AbstrakcyjnaFabrykaPozycji {
-public:
-    Pozycja* stworzPozycje();
-   
-
-    void rejestrujZygote(Zygota *zygota);
-   
-
-    virtual ~AbstrakcyjnaFabrykaPozycji();
-   
-protected:
-    vector<Pozycja*> pozycje;
 };
