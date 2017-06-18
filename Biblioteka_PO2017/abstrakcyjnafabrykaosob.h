@@ -10,7 +10,7 @@
 	 virtual ~AbstrakcyjnaFabrykaOsob() {};
  protected:
 	 int podajHaslo();
-	 string podajLogin();
+	 std::string podajLogin();
 	 void podajRodzajKonta();
  };
 

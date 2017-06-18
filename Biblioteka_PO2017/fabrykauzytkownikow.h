@@ -7,5 +7,5 @@
  class FabrykaUzytkownikow : public AbstrakcyjnaFabrykaOsob
  {
  public:
-		virtual Osoba* stworzOsobe();
+	 Osoba* stworzOsobe();
  };

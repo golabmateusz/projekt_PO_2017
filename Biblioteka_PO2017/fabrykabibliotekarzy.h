@@ -7,5 +7,5 @@
  class FabrykaBibliotekarzy : public AbstrakcyjnaFabrykaOsob
  {
  public:
-		Osoba* stworzOsobe();
+	 Osoba* stworzOsobe();
  };
