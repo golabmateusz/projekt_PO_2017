@@ -1,11 +1,11 @@
 #include <iostream>
+#include <cstdlib>
 #pragma once
 #include "abstrakcyjnafabrykaosob.h"
-
- using namespace std;
+#include "osoba.h"
 
  class FabrykaUzytkownikow : public AbstrakcyjnaFabrykaOsob
  {
  public:
-	 virtual Osoba * stworzOsobe();
+		virtual Osoba* stworzOsobe();
  };

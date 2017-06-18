@@ -1,13 +1,16 @@
 #include <iostream>
- using namespace std;
+#include <cstdlib>
+#pragma once
+#include "osoba.h"
 
  class AbstrakcyjnaFabrykaOsob
  {
  public:
-	 virtual ~AbstrakcyjnaFabrykaOsob();
-	 virtual Osoba * stworzOsobe() = 0;
+	 virtual Osoba* stworzOsobe() = 0;
+	 virtual ~AbstrakcyjnaFabrykaOsob() {};
  protected:
 	 int podajHaslo();
 	 string podajLogin();
 	 void podajRodzajKonta();
  };
+
