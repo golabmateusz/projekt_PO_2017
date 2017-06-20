@@ -12,6 +12,7 @@ public:
     Logowanie();
     ~Logowanie();
     Osoba* aktualna_osoba;
+	bool ktojestkto;
     void logowanie_do_systemu();
 protected:
     std::vector<Osoba*> lista_osob;
