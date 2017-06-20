@@ -3,5 +3,5 @@
 
 Osoba* FabrykaUzytkownikow::stworzOsobe()
 {
-	return new Uzytkownik();
+	return new Uzytkownik(podajLogin(), podajHaslo());
 }

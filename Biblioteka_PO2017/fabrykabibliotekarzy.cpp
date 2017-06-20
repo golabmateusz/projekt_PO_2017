@@ -3,5 +3,5 @@
 
 Osoba* FabrykaBibliotekarzy::stworzOsobe()
 {
-	return new Bibliotekarz();
+    return new Bibliotekarz(podajLogin(), podajHaslo());
 }

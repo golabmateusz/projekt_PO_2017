@@ -1,16 +1,24 @@
+#ifndef _ABSTRAKCYJNAFABRYKAOSOB_H_
+#define _ABSTRAKCYJNAFABRYKAOSOB_H_
 #include <iostream>
 #include <cstdlib>
-#pragma once
 #include "osoba.h"
+enum RodzajKonta
+{
+    Type_Bibliotekarz,
+    Type_Uzytkownik
+};
 
  class AbstrakcyjnaFabrykaOsob
  {
  public:
+     static AbstrakcyjnaFabrykaOsob* wybierzFabryke(RodzajKonta type);
 	 virtual Osoba* stworzOsobe() = 0;
 	 virtual ~AbstrakcyjnaFabrykaOsob() {};
  protected:
-	 int podajHaslo();
+	 std::string podajHaslo();
 	 std::string podajLogin();
-	 void podajRodzajKonta();
+	 //bool podajRodzajKonta();
  };
 
+#endif

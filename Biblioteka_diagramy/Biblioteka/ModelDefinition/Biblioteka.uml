@@ -748,41 +748,14 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="67d8ac7b-7b47-4591-bc73-ffb06662ade3"
-                LastKnownName="int"
-                LastKnownLocation="Biblioteka.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="1f5d1b05-dd96-4181-8998-c61640fc9a7a"
-            name="typKonta"
-            visibility="Protected"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="9d095bd2-b645-423f-97c0-dc6c7d37b8c5"
-                LastKnownName="bool"
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
                 LastKnownLocation="Biblioteka.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="7f4edbf4-3d18-4a49-b725-50e39981b891"
-            name="logowanie"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="d8077bfd-8cbb-43ea-be6e-a8745c285f42"
             name="kimJestes"
@@ -791,6 +764,39 @@
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="b580efb3-3aa8-44b3-9d0e-7f7f13106a38"
+            name="Osoba"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ea9d837a-4f77-400f-8e82-f883ab351e29"
+            name="Osoba"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a7e612a-6625-4421-977a-6fbf9ece2c0c"
+                  name="login"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9173861-5162-451b-b13e-b592e21e0ed0"
+                  name="haslo"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -883,6 +889,47 @@
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b8d3e91e-5bb2-4266-849b-a8f4d1680de4"
+            isDerived="false"
+            sourceEndRoleName="AbstrakcyjnaFabrykaOsob"
+            targetEndRoleName="RodzajKonta"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="acd3ac91-6047-4a9a-a431-89693b40a8a5"
+              LastKnownName="RodzajKonta"
+              LastKnownLocation="Biblioteka.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eba2336f-95f8-4a27-9433-3e8b3ea39770"
+                  name="AbstrakcyjnaFabrykaOsob"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aacc8aaf-106b-42d5-95ad-3dece4365631"
+                  name="RodzajKonta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="967629a2-3a5e-44b8-bb34-782b60a8ae9c"
@@ -899,9 +946,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9b8f38f8-58ed-4184-9139-2891ef844e3a"
-                      LastKnownName="Osoba"
+                    <undefinedTypeMoniker
+                      Id="f003eb10-c015-4b99-a74f-01ce93f506b8"
+                      LastKnownName="Osoba*"
                       LastKnownLocation="Biblioteka.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -949,8 +996,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="67d8ac7b-7b47-4591-bc73-ffb06662ade3"
-                      LastKnownName="int"
+                      Id="9187ec96-1f19-43d8-8cb6-c36789023874"
+                      LastKnownName="string"
                       LastKnownLocation="Biblioteka.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -958,19 +1005,32 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="5b0e9612-8b2c-4c8e-944e-98f1b108040a"
-            name="podajRodzajKonta"
-            visibility="Protected"
+            Id="1746f95c-8edc-45c6-b3f2-ccf75add1469"
+            name="wybierzFabryke"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="af0a762e-b52f-4210-8d4f-9f4d3ae879db"
+                  Id="db98c9ca-6481-4dd3-8a07-485e4bd5704e"
                   direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="623dabda-8008-4e2a-8e66-8d37d97636a0"
+                      LastKnownName="AbstrakcyjnaFabrykaOsob*"
+                      LastKnownLocation="Biblioteka.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="110292e5-5c1c-4c55-897e-7d99e4c56044"
+                  name="RodzajKonta"
+                  direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1020,9 +1080,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9b8f38f8-58ed-4184-9139-2891ef844e3a"
-                      LastKnownName="Osoba"
+                    <undefinedTypeMoniker
+                      Id="f003eb10-c015-4b99-a74f-01ce93f506b8"
+                      LastKnownName="Osoba*"
                       LastKnownLocation="Biblioteka.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1074,9 +1134,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9b8f38f8-58ed-4184-9139-2891ef844e3a"
-                      LastKnownName="Osoba"
+                    <undefinedTypeMoniker
+                      Id="f003eb10-c015-4b99-a74f-01ce93f506b8"
+                      LastKnownName="Osoba*"
                       LastKnownLocation="Biblioteka.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1552,6 +1612,185 @@
         name="Osoba"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="623dabda-8008-4e2a-8e66-8d37d97636a0"
+        name="AbstrakcyjnaFabrykaOsob*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="941b00cb-0e55-4ba2-ac5b-8112b31323c9"
+        name="Biblioteka::Osoba*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f003eb10-c015-4b99-a74f-01ce93f506b8"
+        name="Osoba*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="acd3ac91-6047-4a9a-a431-89693b40a8a5"
+        name="RodzajKonta"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="3bb638e8-21f8-4c3d-aa5c-799e154029de"
+            name="Type_Bibliotekarz" />
+          <enumerationLiteral
+            Id="61080475-6703-4bf3-9ba4-a973579f5b1b"
+            name="Type_Uzytkownik" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fad40ab4-4d50-43ca-9f65-9f115a8fadef"
+        name="Logowanie"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="eef93012-4120-44c5-99a8-fffe0096c0f4"
+            isDerived="false"
+            sourceEndRoleName="Logowanie"
+            targetEndRoleName="AbstrakcyjnaFabrykaOsob"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="70416b34-a324-4560-b232-b7c7693630ba"
+              LastKnownName="AbstrakcyjnaFabrykaOsob"
+              LastKnownLocation="Biblioteka.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e489c58d-029c-4fad-9a2d-c0dae18fe473"
+                  name="Logowanie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8544419-7a54-489d-bae6-2e86a0afdc3b"
+                  name="AbstrakcyjnaFabrykaOsob"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="91474127-be3e-4429-bf7e-d99b77c3db7f"
+            name="aktualna_osoba"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f003eb10-c015-4b99-a74f-01ce93f506b8"
+                LastKnownName="Osoba*"
+                LastKnownLocation="Biblioteka.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f0c3f6f5-3b3e-4967-8ef9-5056c387650a"
+            name="lista_osob"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="72c76e23-c58a-4626-95df-7454ae30da01"
+                LastKnownName="vector&lt;Osoba*&gt;"
+                LastKnownLocation="Biblioteka.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a6d32b51-307f-4a78-9dd0-41cf8cfdc4eb"
+            name="logowanie_do_systemu"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="72ee6c42-6e1b-4d2a-b9ec-0e14af1358b6"
+            name="podaj_login_haslo"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="31d112e8-c9f2-4d82-b31c-8c3a7dc03373"
+            name="szukaj"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36f2e5dd-bee4-475f-9a70-99682ff8e600"
+                  name="string h"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ced6ecc3-a701-4c00-bc78-40d8938043f4"
+                  name="string l"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="888d373b-b6f5-442a-9f49-382c8e0282e5"
+            name="nowe_konto"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="72c76e23-c58a-4626-95df-7454ae30da01"
+        name="vector&lt;Osoba*&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
