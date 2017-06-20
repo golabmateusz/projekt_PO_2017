@@ -4,6 +4,7 @@
 #include <vector>
 #include "POZYCJA.H"
 #include "logowanie.h"
+#include "AbstrakcyjnaFabrykaPozycji.h"
 
 /*
 class zbior {

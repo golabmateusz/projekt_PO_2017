@@ -2,6 +2,7 @@
 #define _POZYCJA_H_
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
 //using namespace std;
 /*{
@@ -17,6 +18,7 @@
 */
 class Pozycja {
      friend class AbstrakcyjnaFabrykaPozycji;
+	 friend class Katalog;
 
 public:
      Pozycja();

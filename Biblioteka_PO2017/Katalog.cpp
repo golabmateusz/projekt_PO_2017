@@ -47,7 +47,7 @@ void Katalog::dostep_do_katalogu()
             this->wyswietl();
              break;
         case 2:
-           // this->zmienStatus();
+           // zmienStatus();
              break;
         case 3:
             this->usun();
@@ -76,7 +76,7 @@ Katalog::~Katalog()
 
 }
 
-void Katalog::usun(std::vector<Pozycja*> &zbior)
+void Katalog::usun()
 {
      unsigned int wybor = 0;
     std::cout << "Lista pozycji systemie:\n";
@@ -86,7 +86,7 @@ void Katalog::usun(std::vector<Pozycja*> &zbior)
         try
         {
             if (zbior.at(i) != NULL)
-                std::cout << i <<". "<< zbior.at(i)->login <<"\n";
+                std::cout << i <<". "<< zbior.at(i)->nazwa <<"\n";
         }
         catch(...)
         {
@@ -98,7 +98,7 @@ void Katalog::usun(std::vector<Pozycja*> &zbior)
     std::cout << "\n";
     if(wybor < (zbior.size()))
     {
-        std::cout << "usunieto konto " << zbior.at(wybor)-> login << "\n";
+        std::cout << "usunieto konto " << zbior.at(wybor)-> nazwa << "\n";
         if (zbior.at(wybor) != NULL)
             delete zbior.at(wybor);
         zbior.at(wybor) = NULL;
@@ -113,63 +113,18 @@ void Katalog::usun(std::vector<Pozycja*> &zbior)
 
 void Katalog::dodaj()
 {
-    RodzajPozycji typ;
-    int wybor = 0;
-     cout<< "\nDodawanie pozycji:k\n";
-    cout<< "\nJesli chcesz dodac nowa Ksiazke do kolekcji nacisnij 1 \n";
-    cin >> wybor;
-    switch (wybor)
-    {
-    case 1:
-        typ = Type_Ksiazka;
-        break;
-    default:
-        typ = Type_Ksiazka;
-        break;
-    }
-    AbstrakcyjnaFabrykaPozycji* fabryka = AbstrakcyjnaFabrykaPozycji::wybierzFabryke(typ);
+    AbstrakcyjnaFabrykaPozycji* fabryka = AbstrakcyjnaFabrykaPozycji::wybierzFabryke(Type_Ksiazka);
     zbior.push_back(fabryka->stworzPozycje());
     delete fabryka;
     this->dostep_do_katalogu();
-
 }
 void Katalog::oddaj()
 {
 
 }
 
-void Katalog::usun_konto(std::vector<Osoba*> &lista)
+void Katalog::usun_konto()
 {
-     unsigned int wybor = 0;
-    std::cout << "Lista loginow kont w systemie:\n";
-
-    for(size_t i=0; i< lista.size(); ++i)
-    {
-        try
-        {
-            if (lista.at(i) != NULL)
-                std::cout << i <<". "<< lista.at(i)->login <<"\n";
-        }
-        catch(...)
-        {
-            std::cout << i << "cos sie zepsulo...\n";
-        }
-    }
-    std::cout << "\nWybierz nr konta ktore chcesz usunac, lub wartosc spoza zakresu aby zakonczyc: ";
-    std::cin >> wybor;
-    std::cout << "\n";
-    if(wybor < (lista.size()))
-    {
-        std::cout << "usunieto konto " << lista.at(wybor)-> login << "\n";
-        if (lista.at(wybor) != NULL)
-            delete lista.at(wybor);
-        lista.at(wybor) = NULL;
-    }
-
-    else
-    {
-        std::cout << "nie usunieto zadnego konta\n";
-    }
 
 }
 
@@ -179,6 +134,11 @@ void Katalog::wyloguj()
 }
 
 void Katalog::wypozycz()
+{
+
+}
+
+void Katalog::wyswietl()
 {
 
 }
