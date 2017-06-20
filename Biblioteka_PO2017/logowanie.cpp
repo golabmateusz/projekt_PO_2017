@@ -1,5 +1,6 @@
 #include "logowanie.h"
 #include <iostream>
+#include <cstdlib>
 #include <cstdio>
 #include <string>
 
@@ -83,7 +84,16 @@ void Logowanie::szukaj(std::string h, std::string l)
                 cout << "Zalogowano!\n";
                 zalogowano = true;
                 aktualna_osoba = lista_osob.at(i);
+                if(this->aktualna_osoba->kimJestes())
+                {
+                    this->ktojestkto = true;
+                }
+                else
+                {
+                    this->ktojestkto = false;
+                }
                 break;
+
             }
             else
             {

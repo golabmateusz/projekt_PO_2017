@@ -9,6 +9,7 @@ class Logowanie
 {
     friend class Bibliotekarz;
 public:
+    bool ktojestkto;
     Logowanie();
     ~Logowanie();
     Osoba* aktualna_osoba;

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdio>
+#include <string>
 #include "AbstrakcyjnaFabrykaPozycji.h"
 #include "FabrykaKsiazek.h"
 using namespace std;

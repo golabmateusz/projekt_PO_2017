@@ -7,20 +7,30 @@
 #include "bibliotekarz.h"
 #include "uzytkownik.h"
 #include "logowanie.h"
-//#include "Pozycja.h"
-//#include "Ksiazka.h"
-//#include "Katalog.h"
-//#include "FabrykaKsiazek.h"
-//#include "AbstrakcyjnaFabrykaPozycji.h"
+#include "POZYCJA.H"
+#include "KSIAZKA.H"
+#include "KATALOG.H"
+#include "FabrykaKsiazek.h"
+#include "AbstrakcyjnaFabrykaPozycji.h"
 
 using namespace std;
 
 int main()
 {
     Logowanie* log = new Logowanie();
+    Katalog* katalog = new Katalog();
 
+    delete katalog;
     delete log;
 
+    //test area
+    /*
+    AbstrakcyjnaFabrykaPozycji* fabryka = AbstrakcyjnaFabrykaPozycji::wybierzFabryke(Type_Ksiazka);
+    Pozycja* ksiazka1 = fabryka->stworzPozycje();
+
+    delete fabryka;
+    delete ksiazka1;
+    */
 	return 0;
 }
 

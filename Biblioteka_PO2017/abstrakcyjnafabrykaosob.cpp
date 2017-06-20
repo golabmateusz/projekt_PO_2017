@@ -1,10 +1,7 @@
 #include "abstrakcyjnafabrykaosob.h"
 #include "fabrykabibliotekarzy.h"
 #include "fabrykauzytkownikow.h"
-#include <iostream>
-#include <cstdio>
 #include <string>
-
 
  AbstrakcyjnaFabrykaOsob* AbstrakcyjnaFabrykaOsob::wybierzFabryke(RodzajKonta type)
  {
@@ -19,7 +16,14 @@
      }
  }
 
-
+ std::string AbstrakcyjnaFabrykaOsob::podajHaslo()
+ {
+    std::string haslo;
+    std::cout << "Podaj haslo dla nowego konta: ";
+    std::cin >> haslo;
+    std::cout << "\n";
+    return haslo;
+ }
 
  std::string AbstrakcyjnaFabrykaOsob::podajLogin()
  {
@@ -28,14 +32,6 @@
     std::cin >> login;
     std::cout << "\n";
     return login;
- }
- std::string AbstrakcyjnaFabrykaOsob::podajHaslo()
- {
-    std::string haslo;
-    std::cout << "Podaj haslo dla nowego konta: ";
-    std::cin >> haslo;
-    std::cout << "\n";
-    return haslo;
  }
 
  //bool AbstrakcyjnaFabrykaOsob::podajRodzajKonta()
