@@ -9,6 +9,7 @@
 class Ksiazka : public Pozycja //klasa Ksiazka dziedziczy publicznie z klasy Pozycja
 {
    	 //int liczbaStron;
+   	 friend class Katalog;
 
 public:
 	 //Ksiazka(string autor, string nazwa, int rokWydania, bool status, int liczbaStron);
