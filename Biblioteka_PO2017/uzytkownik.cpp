@@ -1,4 +1,7 @@
 #include "uzytkownik.h"
+#include <iostream>
+#include <cstdio>
+#include <string>
 
 Uzytkownik::Uzytkownik(std::string login, std::string haslo) : Osoba(login, haslo)
 {
@@ -12,7 +15,7 @@ Uzytkownik::~Uzytkownik()
 
 void Uzytkownik::kimJestes()
 {
-	std::cout << "konto "<< login << " o uprawnieniach uzytkownika" << "\n";
+	std::cout << "konto " << login << " o uprawnieniach uzytkownika" << "\n";
 }
 
 void Uzytkownik::oddaj()

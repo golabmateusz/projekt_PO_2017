@@ -3,6 +3,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <typeinfo>
+#include <string>
+
 
 Bibliotekarz::Bibliotekarz(std::string login, std::string haslo) : Osoba(login, haslo)
 {

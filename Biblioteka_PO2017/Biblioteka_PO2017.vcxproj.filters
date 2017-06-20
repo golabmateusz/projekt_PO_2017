@@ -15,13 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <ClCompile Include="abstrakcyjnafabrykaosob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Biblioteka_PO2017.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bibliotekarz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fabrykabibliotekarzy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fabrykauzytkownikow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logowanie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osoba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uzytkownik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="osoba.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="uzytkownik.h">
+    <ClInclude Include="abstrakcyjnafabrykaosob.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bibliotekarz.h">
@@ -33,67 +53,14 @@
     <ClInclude Include="fabrykauzytkownikow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="abstrakcyjnafabrykaosob.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AbstrakcyjnaFabrykaPozycji.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FabrykaKsiazek.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Katalog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ksiazka.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Pozycja.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="logowanie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Biblioteka_PO2017.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="abstrakcyjnafabrykaosob.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fabrykauzytkownikow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fabrykabibliotekarzy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="osoba.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bibliotekarz.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="uzytkownik.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AbstrakcyjnaFabrykaPozycji.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FabrykaKsiazek.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Katalog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ksiazka.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Pozycja.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="logowanie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="osoba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uzytkownik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
