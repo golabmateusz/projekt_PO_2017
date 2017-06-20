@@ -42,7 +42,10 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 *.sdf
+<<<<<<< HEAD
+=======
 Biblioteka_PO2017.sdf
+>>>>>>> b3c772c5c0f8bfad973143b498a9b57014378cab
 *.sdf
 Biblioteka_PO2017.sdf
 Biblioteka_PO2017.sdf
