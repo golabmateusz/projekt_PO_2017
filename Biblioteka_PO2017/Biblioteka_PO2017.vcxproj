@@ -61,21 +61,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="abstrakcyjnafabrykaosob.cpp" />
+    <ClCompile Include="AbstrakcyjnaFabrykaPozycji.cpp" />
     <ClCompile Include="bibliotekarz.cpp" />
     <ClCompile Include="Biblioteka_PO2017.cpp" />
     <ClCompile Include="fabrykabibliotekarzy.cpp" />
+    <ClCompile Include="FabrykaKsiazek.cpp" />
     <ClCompile Include="fabrykauzytkownikow.cpp" />
+    <ClCompile Include="Katalog.cpp" />
+    <ClCompile Include="Ksiazka.cpp" />
     <ClCompile Include="logowanie.cpp" />
     <ClCompile Include="osoba.cpp" />
+    <ClCompile Include="Pozycja.cpp" />
     <ClCompile Include="uzytkownik.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstrakcyjnafabrykaosob.h" />
+    <ClInclude Include="AbstrakcyjnaFabrykaPozycji.h" />
     <ClInclude Include="bibliotekarz.h" />
     <ClInclude Include="fabrykabibliotekarzy.h" />
+    <ClInclude Include="FabrykaKsiazek.h" />
     <ClInclude Include="fabrykauzytkownikow.h" />
+    <ClInclude Include="KATALOG.H" />
+    <ClInclude Include="KSIAZKA.H" />
     <ClInclude Include="logowanie.h" />
     <ClInclude Include="osoba.h" />
+    <ClInclude Include="Pozycja.h" />
     <ClInclude Include="uzytkownik.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

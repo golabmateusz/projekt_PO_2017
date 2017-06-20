@@ -1,12 +1,40 @@
+#ifndef _POZYCJA_H_
+#define _POZYCJA_H_
 #include <iostream>
-#include <vector>
 #include <cstdlib>
-#include <ctime>
-using namespace std;
+
+//using namespace std;
+/*{
+ AbstrakcyjnaFabrykaPozycji* fabryka1 = AbstrakcyjnaFabrykaPozycji::wybierzFabryke(Type_Ksiazka);
+    Osoba* ksiazka = fabryka1->stworzPozycje();
+
+
+
+
+    delete ksiazka;
+    delete fabryka1;
+}
+*/
+class Pozycja {
+     friend class AbstrakcyjnaFabrykaPozycji;
+
+public:
+     Pozycja();
+     Pozycja(std::string autor, std::string nazwa, int rokWydania, std::string status);
+	 virtual ~Pozycja();
+	 virtual std::string zmienStatus()=0;
+protected:
+
+    std::string autor;
+	std::string nazwa;
+	int rokWydania;
+    std::string status;
+    std::string oddana_wypozyczona;
+};
 /*
 class Pozycja
 {
-	
+
 	string autor;
 	string nazwa;
 	int rokWydania;
@@ -16,7 +44,7 @@ public:
 
 	Pozycja(string="none", string="none", int=9999, bool=false);
 
-   
+
    Pozycja();
 
    virtual ~Pozycja();
@@ -26,16 +54,4 @@ public:
 
 };
 */
-class Pozycja {
-protected:   
-
-    virtual ~Pozycja();//wirtualny destruktor, bo s¹ wirtualne funkcje
-	virtual void zmienStatus()=0;
-
-public:
-	
-	string autor;
-	string nazwa;
-	int rokWydania;
-    bool status;
-};
+#endif
