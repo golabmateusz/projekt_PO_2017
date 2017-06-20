@@ -23,8 +23,8 @@ public:
         Katalog();
         ~Katalog();
         void dostep_do_katalogu();
-		void dodaj(std::string autor, std::string nazwa, int rokWydania, std::string status);
-		void usun(std::string autor, std::string nazwa);
+		void dodaj();
+		void usun();
         void oddaj();
 		void usun_konto();
 		void wyloguj();
