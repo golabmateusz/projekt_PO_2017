@@ -39,6 +39,21 @@
     <ClCompile Include="uzytkownik.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AbstrakcyjnaFabrykaPozycji.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FabrykaKsiazek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Katalog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ksiazka.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pozycja.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstrakcyjnafabrykaosob.h">
@@ -60,6 +75,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="uzytkownik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstrakcyjnaFabrykaPozycji.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FabrykaKsiazek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KATALOG.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KSIAZKA.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pozycja.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
