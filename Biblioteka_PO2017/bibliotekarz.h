@@ -8,7 +8,7 @@
  public:
 	 Bibliotekarz(std::string login, std::string haslo);
 	 virtual ~Bibliotekarz();
-	 virtual void kimJestes();
+	 virtual bool kimJestes();
 
 	 virtual void usunKonto(std::vector<Osoba*> &lista);
  };

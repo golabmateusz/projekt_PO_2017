@@ -12,7 +12,7 @@ class Osoba
      Osoba();
      Osoba(std::string login, std::string haslo);
 	 virtual ~Osoba();
-	 virtual void kimJestes() = 0;
+	 virtual bool kimJestes() = 0;
  protected:
      std::string login;
 	 std::string haslo;

@@ -5,7 +5,6 @@
 #include <typeinfo>
 #include <string>
 
-
 Bibliotekarz::Bibliotekarz(std::string login, std::string haslo) : Osoba(login, haslo)
 {
     std::cout<<"narodzil sie nam bibliotekarz!\n";
@@ -16,9 +15,9 @@ Bibliotekarz::~Bibliotekarz()
     std::cout<<"koniec bibliotekarza\n";
 }
 
-void Bibliotekarz::kimJestes()
+bool Bibliotekarz::kimJestes()
 {
-	std::cout << "konto " << login << " o uprawnieniach bibliotekarza" << "\n";
+	return false;
 }
 
 void Bibliotekarz::usunKonto(std::vector<Osoba*> &lista)
@@ -41,7 +40,7 @@ void Bibliotekarz::usunKonto(std::vector<Osoba*> &lista)
     std::cout << "\nWybierz nr konta ktore chcesz usunac, lub wartosc spoza zakresu aby zakonczyc: ";
     std::cin >> wybor;
     std::cout << "\n";
-    if(wybor <= (lista.size()))
+    if(wybor < (lista.size()))
     {
         std::cout << "usunieto konto " << lista.at(wybor)-> login << "\n";
         if (lista.at(wybor) != NULL)

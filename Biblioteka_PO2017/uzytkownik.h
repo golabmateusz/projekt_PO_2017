@@ -6,8 +6,8 @@
  public:
 	 Uzytkownik(std::string login, std::string haslo);
 	 virtual ~Uzytkownik();
-	 virtual void kimJestes();
-	 virtual void oddaj();
-	 virtual void wypozycz();
+	 virtual bool kimJestes();
+	 //virtual void oddaj();
+	 //virtual void wypozycz();
  };
 #endif
