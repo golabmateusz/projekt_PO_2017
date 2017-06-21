@@ -3,33 +3,31 @@
 #include "logowanie.h"
 using namespace std;
 
-Katalog::Katalog()
+Katalog::Katalog(bool kto)
 {
-    dostep_do_katalogu();
+	dostep_do_katalogu(kto);
 }
 
-void Katalog::dostep_do_katalogu()
+void Katalog::dostep_do_katalogu(bool kto)
 {
     int wybory = 0;
-    if(&Logowanie::ktojestkto)//uzytkownik
+	if(kto)//uzytkownik
     {
-        cout << "katalog user";
-
         cout<< "\nWitaj w katalogu uzytkowniku!\nWybierz:\n1. Lista ksiazek\n2. Wypozycz ksiazke\n3. Oddaj ksiazke\n4. Wyloguj\n";
         cin>>wybory;
         switch (wybory)
         {
         case 1:
-            this->wyswietl();
+            this->wyswietl(kto);
              break;
         case 2:
-            this->wypozycz();
+            this->wypozycz(kto);
              break;
         case 3:
-            this->oddaj();
+            this->oddaj(kto);
              break;
         case 4:
-            this->wyloguj();
+            this->wyloguj(kto);
             break;
         default:
             break;
@@ -38,25 +36,24 @@ void Katalog::dostep_do_katalogu()
     }
     else
     {
-        cout << "katalog ten drugi";
-         cout<< "\nWitaj w katalogu Bibliotekarzu!\nWybierz:\n1. Lista ksiazek\n2. Zmien status/wypozycz\n3. Usun ksiazke\n4. Usun konto\n5. Wyloguj\n";
+         cout<< "\nWitaj w katalogu Bibliotekarzu!\nWybierz:\n1. Lista ksiazek\n2. dodaj\n3. Usun ksiazke\n4. Usun konto\n5. Wyloguj\n";
         cin>>wybory;
         switch (wybory)
         {
         case 1:
-            this->wyswietl();
+            this->wyswietl(kto);
              break;
         case 2:
-           // zmienStatus();
+			this -> dodaj(kto);
              break;
         case 3:
-            this->usun();
+            this->usun(kto);
              break;
         case 4:
-            this->usun_konto();
+            this->usun_konto(kto);
             break;
         case 5:
-            this->wyloguj();
+            this->wyloguj(kto);
             break;
         default:
             break;
@@ -72,11 +69,11 @@ Katalog::~Katalog()
             delete this->zbior.at(i);
     }
     this->zbior.clear();
-    //usuwanie osob z wektora
+    //usuwanie pozycji z wektora
 
 }
 
-void Katalog::usun()
+void Katalog::usun(bool kto)
 {
      unsigned int wybor = 0;
     std::cout << "Lista pozycji systemie:\n";
@@ -98,7 +95,7 @@ void Katalog::usun()
     std::cout << "\n";
     if(wybor < (zbior.size()))
     {
-        std::cout << "usunieto konto " << zbior.at(wybor)-> nazwa << "\n";
+        std::cout << "usunieto pozycje " << zbior.at(wybor)-> nazwa << "\n";
         if (zbior.at(wybor) != NULL)
             delete zbior.at(wybor);
         zbior.at(wybor) = NULL;
@@ -108,37 +105,37 @@ void Katalog::usun()
     {
         std::cout << "nie usunieto zadnej pozycji\n";
     }
-
+	this->dostep_do_katalogu(kto);
 }
 
-void Katalog::dodaj()
+void Katalog::dodaj(bool kto)
 {
     AbstrakcyjnaFabrykaPozycji* fabryka = AbstrakcyjnaFabrykaPozycji::wybierzFabryke(Type_Ksiazka);
     zbior.push_back(fabryka->stworzPozycje());
     delete fabryka;
-    this->dostep_do_katalogu();
+    this->dostep_do_katalogu(kto);
 }
-void Katalog::oddaj()
+void Katalog::oddaj(bool kto)
 {
 
 }
 
-void Katalog::usun_konto()
+void Katalog::usun_konto(bool kto)
 {
 
 }
 
-void Katalog::wyloguj()
+void Katalog::wyloguj(bool kto)
 {
 
 }
 
-void Katalog::wypozycz()
+void Katalog::wypozycz(bool kto)
 {
 
 }
 
-void Katalog::wyswietl()
+void Katalog::wyswietl(bool kto)
 {
 
 }

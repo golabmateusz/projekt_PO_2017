@@ -108,3 +108,8 @@ void Logowanie::szukaj(std::string h, std::string l)
         this->logowanie_do_systemu();
     }
 }
+
+bool Logowanie::getter_ktojestkto()
+{
+	return this->ktojestkto;
+}

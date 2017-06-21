@@ -9,12 +9,15 @@ class Logowanie
 {
     friend class Bibliotekarz;
 public:
-    bool ktojestkto;
+    
     Logowanie();
     ~Logowanie();
-    Osoba* aktualna_osoba;
+    
     void logowanie_do_systemu();
+	bool getter_ktojestkto();
 protected:
+	bool ktojestkto;
+	Osoba* aktualna_osoba;
     std::vector<Osoba*> lista_osob;
     void podaj_login_haslo();
     void nowe_konto();

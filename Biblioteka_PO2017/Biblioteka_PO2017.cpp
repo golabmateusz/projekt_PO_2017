@@ -18,7 +18,8 @@ using namespace std;
 int main()
 {
     Logowanie* log = new Logowanie();
-    Katalog* katalog = new Katalog();
+	bool kto = log->getter_ktojestkto();
+    Katalog* katalog = new Katalog(kto);
 
     delete katalog;
     delete log;

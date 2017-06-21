@@ -21,15 +21,15 @@ protected:
    //int numer;
 public:
 
-        Katalog();
+        Katalog(bool kto);
         ~Katalog();
-        void dostep_do_katalogu();
-		void dodaj();
-		void usun();
-        void oddaj();
-		void usun_konto();
-		void wyloguj();
-		void wypozycz();
-        void wyswietl();
+        void dostep_do_katalogu(bool kto);
+		void dodaj(bool kto);
+		void usun(bool kto);
+        void oddaj(bool kto);
+		void usun_konto(bool kto);
+		void wyloguj(bool kto);
+		void wypozycz(bool kto);
+        void wyswietl(bool kto);
 };
 #endif
