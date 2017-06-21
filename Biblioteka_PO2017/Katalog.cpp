@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Katalog.h"
 #include "logowanie.h"
+#include "bibliotekarz.h"
 using namespace std;
 
 Katalog::Katalog(bool kto)
@@ -83,7 +84,7 @@ void Katalog::usun(bool kto)
         try
         {
             if (zbior.at(i) != NULL)
-                std::cout << i <<". "<< zbior.at(i)->nazwa <<"\n";
+                std::cout << i <<". "<< zbior.at(i)->nazwa <<" "<<zbior.at(i)-> autor<<" " <<zbior.at(i)-> rokWydania<<" " <<zbior.at(i)-> status <<"\n";
         }
         catch(...)
         {
@@ -122,12 +123,14 @@ void Katalog::oddaj(bool kto)
 
 void Katalog::usun_konto(bool kto)
 {
+	//this->Bibliotekarz:usunKonto();
 
 }
 
 void Katalog::wyloguj(bool kto)
 {
-
+	 void logowanie_do_systemu();
+	
 }
 
 void Katalog::wypozycz(bool kto)
@@ -137,5 +140,35 @@ void Katalog::wypozycz(bool kto)
 
 void Katalog::wyswietl(bool kto)
 {
+	 unsigned int wybor = 0;
+	  std::cout << "Lista pozycji systemie:\n";
+
+    for(size_t i=0; i< zbior.size(); ++i)
+    {
+        try
+        {
+            if (zbior.at(i) != NULL)
+                std::cout << i <<". "<< zbior.at(i)->nazwa <<" "<<zbior.at(i)-> autor<<" " <<zbior.at(i)-> rokWydania<<" " <<zbior.at(i)-> status <<"\n";
+        }
+        catch(...)
+        {
+            std::cout << i << "cos sie zepsulo...\n";
+        }
+    }
+
+	
+    std::cout << "\nWybierz --1-- aby powrocic\n ";
+    std::cin >> wybor;
+    std::cout << "\n";
+    if(wybor==1)
+    {
+        this->dostep_do_katalogu(kto);
+    }
+
+    else
+    {
+        std::cout << "cos poszlo nie tak....\n";
+    }
+	//this->dostep_do_katalogu(kto);
 
 }
